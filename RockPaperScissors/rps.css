@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Images/Parchment.jpg);
+  color: white;
+  font-family: "Stick", sans-serif;
+  font-size: 1.5rem;
+}
+p {
+  margin: 0.5rem;
+}
+#overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #00000083 90%, #ffffff44 100%);
+}
+.wrapper {
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#playerChoices {
+  display: flex;
+}
+
+#playerChoices img {
+  width: 50%;
+  transition: 0.5s;
+}
+
+#playerChoices img:hover {
+  cursor: pointer;
+  transition: 0.25s;
+  transform: scale(1.1);
+}
+
+#AvatarCycleImg {
+  width: 40%;
+}
+
+#history {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-size: 2rem;
+  background: transparent;
+  font-family: "Stick", sans-serif;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+}
+@media all and (max-width: 30em) {
+   button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
